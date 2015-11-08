@@ -1,0 +1,11 @@
+# Site settings
+title: Hot Won't Quit
+email: hotwontquit@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  HOT WON'T QUIT is a PUNK ROCK N ROLL band from PORTLAND, OR.
+  We think music should be loud and sweaty AND A WHOLE LOTTA FUN.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://hotwontquit.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown

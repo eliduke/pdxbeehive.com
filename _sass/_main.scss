@@ -1,0 +1,130 @@
+body {
+  background-color: #222;
+  color: #fff;
+  margin: 0 0 50px 0;
+}
+
+img {
+  margin-bottom: 20px;
+}
+
+iframe {
+  margin: 0 auto;
+  display: block;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+  font-family: "Helvetica Neau", sans-serif;
+  font-size: 500%;
+}
+
+.hotwontquit { display: none; }
+
+h1.front { color: #3CF; }
+h1.back { color: #CF3; margin: 10px 0 0 0; }
+
+h1.hot { font-size: 800%; }
+h1.quit { font-size: 700%; }
+
+h1.hot-front { margin: -130px 15px 10px 0; }
+h1.wont-front { margin: -80px 10px 10px 0; }
+h1.quit-front { margin: -112px 15px 10px 0; }
+
+h2 {
+  font-size: 240%;
+  text-align: center;
+  margin-bottom: 60px;
+  background-color: #FF66B2;
+  padding: 10px;
+  font-weight: bold;
+}
+
+h3 {
+  text-align: center;
+  margin: 30px 0;
+  font-weight: bold;
+  background-color: #3CF;
+  padding: 15px;
+  font-size: 300%;
+}
+
+h4 {
+  font-size: 200%;
+  color: #eee;
+  margin: -35px 0px 5px 10px;
+  width: 100%;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #CF3;
+  text-decoration: none;
+}
+
+p {
+  font-size: 140%;
+  margin: 30px 0 30px 0;
+}
+
+.box {
+  padding: 15px;
+}
+
+.box img {
+  margin: 0;
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	margin-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media (min-width: 768px) {
+  p { font-size: 200%; }
+  h3 { font-size: 200%; }
+  h1 { font-size: 575%; margin: 0; }
+  h1.front { margin: -92px 10px 20px 0; }
+  h1.back { margin: 20px 0 0 0; }
+  .hot_wont_quit { display: none; }
+  .hotwontquit { display: block; }
+  h2 { font-size: 310% }
+}
+
+@media (min-width: 992px) {
+  p { font-size: 225%; }
+  h3 { font-size: 250%; }
+  h1 { font-size: 750%; }
+  h1.front { margin: -120px 15px 30px 0; }
+  h1.back { margin: 30px 0 0 0; }
+  h2 { font-size: 390% }
+
+}
+
+@media (min-width: 1200px) {
+  p { font-size: 250%; }
+  h3 { font-size: 300%; }
+  h1 { font-size: 900%; }
+  h1.front { margin: -145px 20px 30px 0; }
+  h1.back { margin: 30px 0 0 0; }
+  h2 { font-size: 490% }
+}

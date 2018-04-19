@@ -5,7 +5,19 @@ description: > # this means to ignore newlines until "baseurl:"
   HOT WON'T QUIT is a PUNK ROCK N ROLL band from PORTLAND, OR.
   We think music should be loud and sweaty AND A WHOLE LOTTA FUN.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://hotwontquit.com" # the base hostname & protocol for your site
+url: "https://hotwontquit.com" # the base hostname & protocol for your site
+image: "/images/gettin-hard-cover.jpg"
 
 # Build settings
 markdown: kramdown
+
+# To show future shows
+future: true
+
+collections:
+  shows:
+    output: true
+    permalink: /shows/:path/
+  music:
+    output: true
+    permalink: /music/:path/

@@ -1,0 +1,26 @@
+---
+layout: default
+title: NEWS
+selected: news
+permalink: /news/
+---
+
+<div id="news">
+  <div class="container">
+    {% for post in site.posts %}
+      {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+      {% if thecycle == 'odd' %}
+        <div class="row">
+      {% endif %}
+        <div class="post col-sm-6">
+          <a href="{{ post.url }}"><img class="img-responsive" src="{{ post.image }}" /></a>
+          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          <p class="date">{{ post.date | date: "%B %-d, %Y" }}</p>
+          {{ post.excerpt }}
+        </div>
+      {% if thecycle == 'even' %}
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

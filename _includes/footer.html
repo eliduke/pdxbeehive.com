@@ -1,0 +1,39 @@
+<div id="footer">
+  <div class="container">
+    <div id="headshots">
+      {% include hotwontquit.html %}
+      <div class="row">
+        <div class="col-xs-4 box drew">
+          <img src="/images/drew.jpg" class="img-responsive">
+          <h4 class="drew">Drew</h4>
+        </div>
+        <div class="col-xs-4 box blaine">
+          <img src="/images/blaine.jpg" class="img-responsive">
+          <h4 class="blaine">Blaine</h4>
+        </div>
+        <div class="col-xs-4 box">
+          <img src="/images/eli.jpg" class="img-responsive">
+          <h4 class="eli">Eli</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="footer-links">
+  <div class="container">
+    <div class="row">
+      <ul>
+        <li><a {% if page.selected == "home" %}class="selected" {% endif %}href="/">HOME</a></li>
+        <li><a {% if page.selected == "news" %}class="selected" {% endif %}href="/news">NEWS</a></li>
+        <li><a {% if page.selected == "music" %}class="selected" {% endif %}href="/music">MUSIC</a></li>
+        <li><a {% if page.selected == "videos" %}class="selected" {% endif %}href="/videos">VIDEOS</a></li>
+        <li><a {% if page.selected == "shows" %}class="selected" {% endif %}href="/shows">SHOWS</a></li>
+        <li><a href="https://hotwontquit.bandcamp.com" target="_blank">BANDCAMP</a></li>
+        <li><a href="https://www.facebook.com/hotwontquitpdx" target="_blank">FACEBOOK</a></li>
+        <li><a href="https://www.instagram.com/hotwontquit" target="_blank">INSTAGRAM</a></li>
+        <li><a href="mailto:hotwontquit@gmail.com" target="_blank">EMAIL</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

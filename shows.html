@@ -1,0 +1,61 @@
+---
+layout: default
+title: SHOWS
+selected: shows
+permalink: /shows/
+---
+
+<div id="shows">
+  <div class="container">
+    <p class="sidewards-notice">HEY! IF YOU TURN YOUR DEVICE SIDEWARDS, YOU'LL SEE MORE INFO ABOUT EACH SHOW.</p>
+    <table class="table">
+      <thead class="thead-inverse">
+        <tr>
+          <th>DATE</th>
+          <th>CITY</th>
+          <th>VENUE</th>
+          <th class="sidewards">WITH</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for show in site.shows %}
+          {% capture show_date %}{{ show.when | date: '%F' }}{% endcapture %}
+          {% capture current_date %}{{ site.time | date: '%F' }}{% endcapture %}
+          {% if show_date > current_date %}
+            <tr>
+              <td>
+                {% if show.more_info %}<a href="{{ show.url }}">{% endif %}
+                  <span class="sidewards">
+                    {{ show.when | date: "%B %-d" }}
+                  </span>
+                  <span class="tallwards">{{ show.when | date: "%-m/%-d" }}</span>
+                {% if show.more_info %}</a>{% endif %}
+                {% if show.fb_event %}
+                <span class="sidewards">
+                  <a class="fb" href="{{ show.fb_event }}" target="_blank">
+                    <img class="fb" src="/images/fb.png">
+                  </a>
+                </span>
+                {% endif %}
+              </td>
+              <td>{{ show.city }}</td>
+              <td>
+                {% if show.venue_link %}<a href="{{ show.venue_link }}" target="_blank">{% endif %}
+                  {{ show.venue_name }}
+                {% if show.venue_link %}</a>{% endif %}
+              </td>
+              <td class="sidewards">
+                {% for band in show.bands %}
+                  {% if band.link %}<a href="{{ band.link }}" target="_blank">{% endif %}
+                    {{ band.name }}
+                  {% if band.link %}</a>{% endif %}
+                  <br/>
+                {% endfor %}
+              </td>
+            </tr>
+          {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>

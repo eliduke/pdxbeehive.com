@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-sm-12">
+    <ul class="links">
+      <li><a {% if page.selected == "home" %}class="selected" {% endif %}href="/">HOME</a></li>
+      <li><a {% if page.selected == "news" %}class="selected" {% endif %}href="/news">NEWS</a></li>
+      <li><a {% if page.selected == "music" %}class="selected" {% endif %}href="/music">MUSIC</a></li>
+      <li><a {% if page.selected == "videos" %}class="selected" {% endif %}href="/videos">VIDEOS</a></li>
+      <li><a {% if page.selected == "shows" %}class="selected" {% endif %}href="/shows">SHOWS</a></li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+---
+layout: default
+selected: music
+---
+
+<div id="show">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7">
+        <h3>{{ page.when | date: "%B %-d, %Y" }}</h3>
+        <p><a href="{{ page.venue_link }}" target="_blank">{{ page.venue_name }}</a> in {{ page.city }}</p>
+        <p><small>{{ page.details }}</small></p>
+        <p>
+          <small>Sharing the stage with:</small><br />
+          {% for band in page.bands %}
+            {% if band.link %}<a href="{{ band.link }}" target="_blank">{% endif %}
+              <b>{{ band.name }}</b>
+            {% if band.link %}</a>{% endif %}
+            <br/>
+          {% endfor %}
+        </p>
+        {% if page.fb_event %}
+          <p><img class="fb" src="/images/fb.png"> <a href="{{ page.fb_event }}" target="_blank">Facebook Event</a></p>
+        {% endif%}
+      </div>
+      <div class="col-sm-5">
+        <img class="img-responsive" src="{{ page.image }}" />
+      </div>
+    </div>
+  </div>
+</div>

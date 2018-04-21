@@ -1,12 +1,11 @@
 # Site settings
-title: Hot Won't Quit
-email: hotwontquit@gmail.com
+title: PDX Beehive
+email: pdxbeehive@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  HOT WON'T QUIT is a PUNK ROCK N ROLL band from PORTLAND, OR.
-  We think music should be loud and sweaty AND A WHOLE LOTTA FUN.
+  A cute little place in Cully
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://hotwontquit.com" # the base hostname & protocol for your site
-image: "/images/gettin-hard-cover.jpg"
+url: "https://pdxbeehive.com" # the base hostname & protocol for your site
+image: "/images/homepage/beehive.jpg"
 
 # Build settings
 markdown: kramdown
@@ -15,9 +14,6 @@ markdown: kramdown
 future: true
 
 collections:
-  shows:
+  events:
     output: true
-    permalink: /shows/:path/
-  music:
-    output: true
-    permalink: /music/:path/
+    permalink: /events/:path/

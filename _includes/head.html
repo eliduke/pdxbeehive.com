@@ -5,14 +5,26 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
   <meta property="fb:admins" content="elimduke" />
-  <meta property="og:title" content="PDX Beehive" />
-  <meta property="og:site_name" content="PDX Beehive"/>
-  <meta property="og:url" content="https://pdxbeehive.com/" />
+  <meta property="og:title" content="
+    {% if page.movie %}
+      {{ page.movie }} on {{ page.when }} / Outdoor Movie at The Beehive!
+    {% else %}
+      The Beehive
+    {% endif %}
+  " />
+  <meta property="og:site_name" content="The Beehive"/>
+  <meta property="og:url" content="https://pdxbeehive.com{{ page.url }}" />
   <meta property="og:image" content="https://pdxbeehive.com{% if page.image %}{{ page.image }}{% else %}{{ site.image }}{% endif %}" />
-  <meta property="og:description" content="We've got a month-to-month room available on September 1st at the PDX Beehive in NE Portland (51st and Killingsworth)." />
+  <meta property="og:description" content="
+    {% if page.notes %}
+      {{ page.notes }}
+    {% else %}
+      A cute little place in Cully
+    {% endif %}
+  " />
   <meta property="og:type" content="{% if page.url == "/" %}website{% else %}article{% endif %}" />
 
-  <title>PDX Beehive</title>
+  <title>The Beehive</title>
 
   <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
   <script src="/js/lightbox.js"></script>

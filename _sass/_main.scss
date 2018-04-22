@@ -30,6 +30,12 @@ img.movie-poster {
   width: 35%;
 }
 
+.addeventatc {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
 #movie {
   h1 {
     margin: 0 0 20px 0;
@@ -70,7 +76,7 @@ img.movie-poster {
 }
 
 @media (max-width: 600px) {
-  img.movie-poster {
+  img.movie-poster, .addeventatc {
     width: 100%;
   }
 }

@@ -7,9 +7,9 @@
   <meta property="fb:admins" content="elimduke" />
   <meta property="og:title" content="
     {% if page.movie %}
-      {{ page.movie }} on {{ page.when }} / Outdoor Movie at The Beehive!
+      Outdoor Movie at The Beehive: {{ page.movie }} on {{ page.when }}
     {% else %}
-      The Beehive
+      The Beehive: a cute little place in Cully
     {% endif %}
   " />
   <meta property="og:site_name" content="The Beehive"/>
@@ -24,10 +24,16 @@
   " />
   <meta property="og:type" content="{% if page.url == "/" %}website{% else %}article{% endif %}" />
 
-  <title>The Beehive</title>
+  <title>
+    {% if page.movie %}
+      Outdoor Movie at The Beehive: {{ page.movie }} on {{ page.when }}!
+    {% else %}
+      The Beehive: a cute little place in Cully
+    {% endif %}
+  </title>
 
   <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
-  <script src="/js/lightbox.js"></script>
+  <script src="/js/lightbox/lightbox.js"></script>
   <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
 
   <!-- Bootstrap -->

@@ -7,6 +7,9 @@
   <meta property="fb:admins" content="elimduke" />
   <meta property="og:title" content="
     {% if page.movie %}
+      {% if page.canceled %}
+        CANCELED!
+      {% endif %}
       Outdoor Movie at The Beehive: {{ page.movie }} on {{ page.start_date | date: "%A, %B %-d" }}
     {% else %}
       The Beehive: a cute little place in Cully
@@ -26,6 +29,9 @@
 
   <title>
     {% if page.movie %}
+      {% if page.canceled %}
+        CANCELED!
+      {% endif %}
       Outdoor Movie at The Beehive: {{ page.movie }} on {{ page.start_date | date: "%A, %B %-d" }}!
     {% else %}
       The Beehive: a cute little place in Cully
@@ -39,7 +45,7 @@
   <!-- Bootstrap -->
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/lightbox.css" rel="stylesheet">
-  <link href="/css/application.css" rel="stylesheet">
+  <link href="/css/application.css?{{ time.now }}" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

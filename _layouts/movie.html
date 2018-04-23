@@ -3,22 +3,31 @@ layout: default
 ---
 
 <div id="movie">
-  <h1>Outdoor Movie at The Beehive!</h1>
+  {% if page.canceled %}
+    <div class="canceled">
+      <h1>THIS EVENT IS CANCELED</h1>
+      <p>{{ page.canceled }}</p>
+    </div>
+  {% else %}
+    <h1>Outdoor Movie at The Beehive!</h1>
+  {% endif %}
 
   <img class="img-responsive movie-poster" src="{{ page.image }}"/>
 
-  <div title="Add to Calendar" class="addeventatc">
-    Add to Calendar
-    <span class="start">{{ page.start_date }}</span>
-    <span class="end">{{ page.end_date }}</span>
-    <span class="timezone">America/Los_Angeles</span>
-    <span class="title">{{ page.movie }} / Outdoor Movie at The Beehive!</span>
-    <span class="description">{{ page.notes }}</span>
-    <span class="location">5133 NE Killingsworth St, Portland, OR 97218</span>
-  </div>
+  {% unless page.canceled %}
+    <div title="Add to Calendar" class="addeventatc">
+      Add to Calendar
+      <span class="start">{{ page.start_date }}</span>
+      <span class="end">{{ page.end_date }}</span>
+      <span class="timezone">America/Los_Angeles</span>
+      <span class="title">{{ page.movie }} / Outdoor Movie at The Beehive!</span>
+      <span class="description">{{ page.notes }}</span>
+      <span class="location">5133 NE Killingsworth St, Portland, OR 97218</span>
+    </div>
+  {% endunless %}
 
   <h2>{{ page.movie }}</h2>
-  <h3 class="date">{{ page.when }}</h3>
+  <h3 class="date">{{ page.start_date | date: "%A, %B %-d" }}</h3>
 
   <p>{{ page.notes }}</p>
   <p><strong>The party starts at 6pm and the movie starts when it's dark enough</strong></p>

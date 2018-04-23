@@ -7,7 +7,7 @@
   <meta property="fb:admins" content="elimduke" />
   <meta property="og:title" content="
     {% if page.movie %}
-      Outdoor Movie at The Beehive: {{ page.movie }} on {{ page.when }}
+      Outdoor Movie at The Beehive: {{ page.movie }} on {{ page.start_date | date: "%A, %B %-d" }}
     {% else %}
       The Beehive: a cute little place in Cully
     {% endif %}
@@ -26,7 +26,7 @@
 
   <title>
     {% if page.movie %}
-      Outdoor Movie at The Beehive: {{ page.movie }} on {{ page.when }}!
+      Outdoor Movie at The Beehive: {{ page.movie }} on {{ page.start_date | date: "%A, %B %-d" }}!
     {% else %}
       The Beehive: a cute little place in Cully
     {% endif %}

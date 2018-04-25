@@ -1,5 +1,5 @@
 # Site settings
-title: PDX Beehive
+title: The Beehive
 email: pdxbeehive@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   A cute little place in Cully
@@ -10,7 +10,7 @@ image: "/images/homepage/beehive.jpg"
 # Build settings
 markdown: kramdown
 
-# To show future shows
+# To show future events
 future: true
 
 collections:

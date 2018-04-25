@@ -29,8 +29,9 @@ layout: default
   <h2>{{ page.movie }}</h2>
   <h3 class="date">{{ page.start_date | date: "%A, %B %-d" }}</h3>
 
+  <p class="time">The party starts at {{ page.start_date | date: "%l%P" }}. The movie starts when it's dark enough.</p>
+
   <p>{{ page.notes }}</p>
-  <p><strong>The party starts at 6pm and the movie starts when it's dark enough</strong></p>
 
   <h3>The Fine Print</h3>
   <p>Outdoor Movies at The Beehive are fun and casual. We set up a projector in the backyard, lay out blankets, bust out some snacks and drinks, and the party starts itself. Sometimes we spark up a bonfire and sometimes it's just too fucking hot for that, am I right?!</p>

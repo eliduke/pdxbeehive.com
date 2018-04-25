@@ -1,3 +1,5 @@
+$poster-color: #3E4A58;
+
 body {
   padding: 0;
   margin: 0 0 40px 0;
@@ -24,42 +26,20 @@ img {
   margin-bottom: 10px;
 }
 
-img.movie-poster {
-  float: right;
-  margin-left: 20px;
-  width: 35%;
-}
-
-.addeventatc {
-  float: right;
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
-iframe {
-  width: 100%;
-}
-
 #movie {
   h1 {
     margin: 0 0 20px 0;
     font-size: 275%;
     text-align: center;
-    background: #3E4A58;
+    background: $poster-color;
     padding: 10px;
     color: #fff;
   }
 
-  .canceled {
-    h1 {
-      background: red;
-      margin: 0;
-    }
-    p {
-      border: 3px solid red;
-      padding: 20px;
-      margin-bottom: 20px;
-    }
+  img {
+    float: right;
+    margin-left: 20px;
+    width: 35%;
   }
 
   h2 {
@@ -70,29 +50,60 @@ iframe {
     margin: 25px 0 15px 0;
   }
 
-
   h3.date {
     margin: 5px 0 30px 0;
   }
 
-  p.footnotes {
-    font-size: 80%;
-    color: #999;
+  p.time {
+    font-weight: bold;
+    border: 3px solid $poster-color;
+    margin: 0 0 30px 0;
+    padding: 10px;
+    width: 62%;
   }
 
   a {
-    color: #3E4A58;
+    color: $poster-color;
     text-decoration: underline;
   }
 
   a:hover {
-    color: #3E4A58;
+    color: $poster-color;
     text-decoration: none;
+  }
+
+  .addeventatc {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  iframe {
+    width: 100%;
+  }
+
+  .canceled {
+    h1 {
+      background: red;
+      margin: 0;
+    }
+
+    p {
+      border: 3px solid red;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
   }
 }
 
 @media (max-width: 600px) {
-  img.movie-poster, .addeventatc {
-    width: 100%;
+  #movie {
+    img, .addeventatc, p.time {
+      width: 100%;
+    }
+
+    p.time {
+      margin-left: 0;
+    }
   }
 }

@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
+{% if page.color %}
+  <style>
+    #movie h1 { background: #{{ page.color }} }
+    #movie p.time { border: 3px solid #{{ page.color }} }
+    #movie a, #movie a:hover { color: #{{ page.color }} }
+  </style>
+{% endif %}
 
 <div id="movie">
   {% if page.canceled %}

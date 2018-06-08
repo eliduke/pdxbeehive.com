@@ -34,6 +34,9 @@
       {% endif %}
       Outdoor Movie at The Beehive: {{ page.movie }} on {{ page.start_date | date: "%A, %B %-d" }}!
     {% else %}
+      {% if page.title %}
+        {{ page.title }} at
+      {% endif %}
       The Beehive: a cute little place in Cully
     {% endif %}
   </title>

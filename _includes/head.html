@@ -10,11 +10,10 @@
       {% if page.canceled %}
         CANCELED!
       {% endif %}
-      Outdoor Movie at The Beehive: {{ page.movie }} on {{ page.start_date | date: "%A, %B %-d" }}
+      Outdoor Movie at The Beehive: {{ page.movie }} on {{ page.start_date | date: "%A, %B %-d" }}!
+    {% elsif page.layout == "room" %}
+      {{ page.title }} at The Beehive
     {% else %}
-      {% if page.title %}
-        {{ page.title }} at
-      {% endif %}
       The Beehive: a cute little place in Cully
     {% endif %}
   " />
@@ -36,10 +35,9 @@
         CANCELED!
       {% endif %}
       Outdoor Movie at The Beehive: {{ page.movie }} on {{ page.start_date | date: "%A, %B %-d" }}!
+    {% elsif page.layout == "room" %}
+      {{ page.title }} at The Beehive
     {% else %}
-      {% if page.title %}
-        {{ page.title }} at
-      {% endif %}
       The Beehive: a cute little place in Cully
     {% endif %}
   </title>

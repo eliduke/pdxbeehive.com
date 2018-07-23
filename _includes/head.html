@@ -22,7 +22,7 @@
   <meta property="og:image" content="https://pdxbeehive.com{% if page.image %}{{ page.image }}{% else %}{{ site.image }}{% endif %}" />
   <meta property="og:description" content="
     {% if page.notes %}
-      {{ page.notes }}
+      {{ page.notes | strip_html }}
     {% else %}
       A cute little place in Cully
     {% endif %}

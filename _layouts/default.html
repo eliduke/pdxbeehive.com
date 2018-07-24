@@ -10,14 +10,15 @@
           {% unless page.layout == "movie" %}
             <img class="header img-rounded img-responsive" src="images/homepage/beehive.jpg" />
             <h3 class="text-center">The Beehive: a cute little place in Cully</h3>
-            <hr>
+            <hr/>
           {% endunless %}
 
           {{ content }}
 
-          {% include footer.html %}
+          <hr />
         </div>
       </div>
+      {% include footer.html %}
     </div>
   </body>
 </html>

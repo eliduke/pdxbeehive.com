@@ -24,6 +24,11 @@ img {
   margin-bottom: 10px;
 }
 
+small {
+  color: #ccc;
+  font-size: 70%;
+}
+
 #movie {
   h1 {
     margin: 0 0 20px 0;
@@ -98,6 +103,42 @@ img {
 @media (max-width: 600px) {
   #movie {
     img, .addeventatc, p.time {
+      width: 100%;
+    }
+  }
+}
+
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+
+  form {
+    padding: 0;
+  }
+
+  .mc-field-group {
+    width: 100%;
+    padding: 0;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  div#mce-responses {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    #mce-success-response, #mce-error-response {
+      color: #666;
+    }
+
+    div.response {
+      font-weight: normal;
+      padding: 0;
+      margin: 0 0 20px 0;
       width: 100%;
     }
   }

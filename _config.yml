@@ -17,3 +17,6 @@ collections:
   events:
     output: true
     permalink: /events/:path/
+  rooms:
+    output: true
+    permalink: /rooms/:path/

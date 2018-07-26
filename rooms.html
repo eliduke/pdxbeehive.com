@@ -1,0 +1,15 @@
+---
+layout: default
+title: Rooms For Rent
+---
+
+<div class="row">
+  {% for room in site.rooms %}
+    <div class="col-sm-6">
+      <a href="{{ room.url }}">
+        <img src="{{ room.image }}" class="img-responsive img-rounded">
+        <p class="text-center">{{ room.room }}</p>
+      </a>
+    </div>
+  {% endfor %}
+</div>

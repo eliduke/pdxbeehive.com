@@ -37,8 +37,8 @@ layout: default
   <h3 class="date">{{ page.party_start | date: "%A, %B %-d" }}</h3>
 
   <p class="time">
-    The party starts at {{ page.party_start | date: "%l%P" }}.
-    The movie starts at {{ page.movie_start | date: "%l%P" }}.
+    The party starts at {{ page.party_start | date: "%l:%M%P" }}.
+    The movie starts at {{ page.movie_start | date: "%l:%M%P" }}.
   </p>
 
   <p>{{ page.notes }}</p>

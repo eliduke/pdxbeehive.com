@@ -24,8 +24,8 @@ layout: default
   {% unless page.canceled %}
     <div title="Add to Calendar" class="addeventatc">
       Add to Calendar
-      <span class="start">{{ page.start_date }}</span>
-      <span class="end">{{ page.end_date }}</span>
+      <span class="start">{{ page.party_start }}</span>
+      <span class="end">{{ page.party_end }}</span>
       <span class="timezone">America/Los_Angeles</span>
       <span class="title">{{ page.movie }} / Outdoor Movie at The Beehive!</span>
       <span class="description">{{ page.notes }}</span>
@@ -34,15 +34,18 @@ layout: default
   {% endunless %}
 
   <h2>{{ page.movie }}</h2>
-  <h3 class="date">{{ page.start_date | date: "%A, %B %-d" }}</h3>
+  <h3 class="date">{{ page.party_start | date: "%A, %B %-d" }}</h3>
 
-  <p class="time">The party starts at {{ page.start_date | date: "%l%P" }}. The movie starts when it's dark enough.</p>
+  <p class="time">
+    The party starts at {{ page.party_start | date: "%l%P" }}.
+    The movie starts at {{ page.movie_start | date: "%l%P" }}.
+  </p>
 
   <p>{{ page.notes }}</p>
 
   <h3>The Fine Print</h3>
-  <p>Outdoor Movies at The Beehive are fun and casual. We set up a projector in the backyard, lay out blankets, bust out some snacks and drinks, and the party starts itself. Sometimes we spark up a bonfire and sometimes it's just too fucking hot for that, am I right?!</p>
-  <p><strong>Feel free to bring anything that you want to contribute</strong>: food, drinks, lawn chairs, blankets, and other friends! Seriously, the more the merrier! We'll have some of that stuff available, but if you're particular about something, make it happen. There will be cooler space with ice for you to add cold drinks and a table or two for setting up snacks. Try your best to bring finger foods because who's got time to wash a bunch of plates and shit?</p>
+  <p>Outdoor Movies at The Beehive are fun and casual. We set up a projector in the backyard, lay out blankets, bust out some snacks and drinks, get a bonefire started, and then the party starts itself.</p>
+  <p><strong>Feel free to bring anything that you want to contribute</strong>: food, drinks, lawn chairs, (warm) blankets, and other friends! Seriously, the more the merrier! We'll have some of that stuff available, but if you're particular about something, make it happen. There will be cooler space with ice for you to add cold drinks and a table or two for setting up snacks. Try your best to bring finger foods because who's got time to wash a bunch of plates and shit, amiright?</p>
   <p>
     <strong>
       The Beehive<br/>
@@ -56,8 +59,7 @@ layout: default
   <iframe
     height="400"
     frameborder="0" style="border:0"
-    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBcOqiORkvkDZxvxYF3ROu61Ldq__ZRvlI
-      &q=5133+NE+Killingsworth+St,+Portland,+OR+97218" allowfullscreen>
+    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBcOqiORkvkDZxvxYF3ROu61Ldq__ZRvlI&q=5133+NE+Killingsworth+St,+Portland,+OR+97218" allowfullscreen>
   </iframe>
 
   <p>The Beehive's address is on Killingsworth but the house is actually one house back off the street on the <strong>north side</strong>. <em>Technically</em> the house is on 50th Place, but there's no street sign. Go figure. The good news is that Google and Apple Maps know exactly where the house is. You can trust it. Parking is tough right near the house, so your best bet is to park on 52nd just south of Killingsworth. If you have any problems, give us a ring: <a href="tel:4243543853">424-ELI-DUKE</a>.</p>

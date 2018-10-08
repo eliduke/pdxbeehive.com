@@ -10,7 +10,7 @@
       {% if page.canceled %}
         CANCELED!
       {% endif %}
-      {{ page.movie }} / Outdoor Movie at The Beehive on {{ page.start_date | date: "%A, %B %-d" }}
+      {{ page.movie }} / Outdoor Movie at The Beehive on {{ page.party_start | date: "%A, %B %-d" }}
     {% elsif page.layout == "room" %}
       {{ page.title }} at The Beehive
     {% else %}
@@ -34,7 +34,7 @@
       {% if page.canceled %}
         CANCELED!
       {% endif %}
-      {{ page.movie }} / Outdoor Movie at The Beehive on {{ page.start_date | date: "%A, %B %-d" }}
+      {{ page.movie }} / Outdoor Movie at The Beehive on {{ page.party_start | date: "%A, %B %-d" }}
     {% elsif page.layout == "room" %}
       {{ page.title }} at The Beehive
     {% else %}

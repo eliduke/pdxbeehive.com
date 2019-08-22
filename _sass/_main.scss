@@ -1,6 +1,6 @@
 body {
   padding: 0;
-  margin: 0 0 40px 0;
+  margin: 20px 0 40px 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -20,12 +20,12 @@ p, li {
   font-size: 120%;
 }
 
-.row {
-  margin: 20px 0;
-}
-
 img {
   margin-bottom: 10px;
+}
+
+img.charcoal-hero {
+  margin: 20px 0;
 }
 
 small {
@@ -104,14 +104,6 @@ small {
   }
 }
 
-@media (max-width: 600px) {
-  #movie {
-    img, .addeventatc, p.time {
-      width: 100%;
-    }
-  }
-}
-
 #mc_embed_signup {
   form {
     padding: 0;
@@ -159,5 +151,13 @@ small {
   #mc-embedded-subscribe-form div.mce_inline_error {
     display: block;
     text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  #movie {
+    img, .addeventatc, p.time {
+      width: 100%;
+    }
   }
 }

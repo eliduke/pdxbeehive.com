@@ -33,6 +33,26 @@ small {
   font-size: 70%;
 }
 
+#faq {
+  dl {
+    margin-top: 40px;
+
+    dt {
+      font-size: 150%;
+      margin-bottom: 10px;
+    }
+
+    dd {
+      font-size: 130%;
+      margin-bottom: 30px;
+
+      p {
+        font-size: 100%;
+      }
+    }
+  }
+}
+
 #movie {
   h1 {
     margin: 0 0 20px 0;

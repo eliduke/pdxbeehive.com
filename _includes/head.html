@@ -13,6 +13,8 @@
       {{ page.movie }} / Outdoor Movie at The Beehive on {{ page.party_start | date: "%A, %B %-d" }}
     {% elsif page.layout == "room" %}
       {{ page.title }} at The Beehive
+    {% elsif page.title == "FAQ" %}
+      Frequently Asked Questions at The Beehive
     {% else %}
       The Beehive: a cute little place in Cully
     {% endif %}

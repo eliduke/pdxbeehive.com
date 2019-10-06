@@ -39,7 +39,8 @@ small {
 
     dt {
       font-size: 170%;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
+      text-align: center;
     }
 
     dd {
@@ -57,11 +58,15 @@ small {
         }
       }
 
+      li {
+        font-size: 100%;
+      }
+
       img {
         margin: 25px 0;
       }
 
-      .next-schedules {
+      .nest-schedules {
         display: inline-block;
         margin-bottom: 20px;
       }

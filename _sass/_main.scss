@@ -38,7 +38,7 @@ small {
     margin-top: 40px;
 
     dt {
-      font-size: 150%;
+      font-size: 170%;
       margin-bottom: 10px;
     }
 
@@ -48,6 +48,22 @@ small {
 
       p {
         font-size: 100%;
+
+        &.image-caption {
+          text-align: center;
+          margin: -20px 0 0 0;
+          font-size: 80%;
+          color: #999;
+        }
+      }
+
+      img {
+        margin: 25px 0;
+      }
+
+      blockquote {
+        padding: 0 0 0 15px;
+        color: #666;
       }
     }
   }

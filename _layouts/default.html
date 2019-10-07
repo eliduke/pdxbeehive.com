@@ -6,12 +6,10 @@
   <body>
     <div class="container">
       <div class="row">
+
         <div class="col-lg-10 col-lg-offset-1">
-          {% unless page.layout == "movie" %}
-            <img class="header img-rounded img-responsive" src="/images/homepage/beehive.jpg" />
-            <h3 class="text-center">The Beehive: a cute little place in Cully</h3>
-            <hr/>
-          {% endunless %}
+
+          {% include header.html %}
 
           {{ content }}
 

@@ -1,6 +1,6 @@
 body {
   padding: 0;
-  margin: 20px 0 40px 0;
+  margin: 0 0 40px 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -33,9 +33,29 @@ small {
   font-size: 70%;
 }
 
-#faq {
+#header {
+  font-size: 150%;
+  border-bottom: 1px solid #EAEAEA;
+  padding: 15px 0;
+  margin-bottom: 30px;
+
+  a, a:hover {
+    color: #262626;
+    text-decoration: none;
+  }
+
   ul {
+    margin: 0;
+  }
+}
+
+#faq {
+  ul.faq {
     font-size: 150%;
+
+    li {
+      margin-bottom: 10px;
+    }
   }
 
   dl {
@@ -48,22 +68,13 @@ small {
     }
 
     dd {
-      font-size: 130%;
       margin-bottom: 30px;
 
-      p {
-        font-size: 100%;
-
-        &.image-caption {
-          text-align: center;
-          margin: -20px 0 0 0;
-          font-size: 80%;
-          color: #999;
-        }
-      }
-
-      li {
-        font-size: 100%;
+      p.image-caption {
+        text-align: center;
+        margin: -20px 0 0 0;
+        font-size: 90%;
+        color: #ccc;
       }
 
       img {
@@ -210,5 +221,11 @@ small {
     img, .addeventatc, p.time {
       width: 100%;
     }
+  }
+}
+
+@media (min-width: 375px) {
+  #header {
+    font-size: 200%;
   }
 }

@@ -79,6 +79,12 @@ small {
 
       img {
         margin: 25px 0;
+
+        &.printer-pro {
+          float: left;
+          width: 100px;
+          margin: 2px 15px 0 0;
+        }
       }
 
       .nest-schedules {

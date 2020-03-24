@@ -33,6 +33,19 @@ small {
   font-size: 70%;
 }
 
+.coronavirus {
+  h3 {
+    margin-top: 10px;
+    color: red;
+  }
+
+  background: #efefef;
+  padding: 1px 15px 5px 15px;
+  margin: 30px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
 #header {
   font-size: 150%;
   border-bottom: 1px solid #EAEAEA;

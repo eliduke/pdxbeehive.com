@@ -10,10 +10,10 @@
       {% if page.canceled %}
         CANCELED!
       {% endif %}
-      {{ page.movie }} at The Beehive on {{ page.party_start | date: "%A, %B %-d" }}
-    {% elsif page.layout == "room" %}
+      Outdoor Movie: {{ page.movie }} - {{ page.party_start | date: '%-d %b %Y' }}
+    {% elsif page.layout == 'room' %}
       {{ page.title }} at The Beehive
-    {% elsif page.title == "FAQ" %}
+    {% elsif page.title == 'FAQ' %}
       Frequently Asked Questions at The Beehive
     {% else %}
       The Beehive: a cute little place in Cully

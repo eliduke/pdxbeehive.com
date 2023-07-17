@@ -36,7 +36,7 @@
       {% if page.canceled %}
         CANCELED!
       {% endif %}
-      {{ page.movie }} at The Beehive on {{ page.party_start | date: "%A, %B %-d" }}
+      Outdoor Movie: {{ page.movie }} - {{ page.party_start | date: '%-d %b %Y' }}
     {% elsif page.layout == "room" %}
       {{ page.title }} at The Beehive
     {% else %}

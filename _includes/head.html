@@ -15,6 +15,8 @@
       {{ page.title }} at The Beehive
     {% elsif page.title == 'FAQ' %}
       Frequently Asked Questions at The Beehive
+    {% elsif page.title == 'NYE' %}
+      New Year's Eve House Party at The Beehive
     {% else %}
       The Beehive: a cute little place in Cully
     {% endif %}
@@ -39,6 +41,10 @@
       Outdoor Movie: {{ page.movie }} - {{ page.party_start | date: '%-d %b %Y' }}
     {% elsif page.layout == "room" %}
       {{ page.title }} at The Beehive
+    {% elsif page.title == 'FAQ' %}
+      Frequently Asked Questions at The Beehive
+    {% elsif page.title == 'NYE' %}
+      New Year's Eve House Party at The Beehive
     {% else %}
       The Beehive: a cute little place in Cully
     {% endif %}

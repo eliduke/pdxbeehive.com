@@ -263,7 +263,7 @@ small {
 
 @media (max-width: 600px) {
   #movie {
-    img, .addeventatc, p.time {
+    img, img.movie-poster, .addeventatc, p.time {
       width: 100%;
     }
   }

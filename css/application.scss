@@ -1,7 +1,281 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
+
 @charset "utf-8";
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import "main";
+body {
+  padding-top: 85px;
+  margin: 0 0 40px 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+h3.email {
+  margin-bottom: 30px;
+}
+
+p, li {
+  font-size: 120%;
+}
+
+p.time {
+  font-weight: bold;
+  background: #eee;
+  border: 3px solid red;
+  margin: 20px 0;
+  padding: 10px;
+  width: 62%;
+}
+
+img {
+  margin-bottom: 10px;
+}
+
+img.charcoal-hero {
+  margin: 20px 0;
+}
+
+small {
+  color: #ccc;
+  font-size: 70%;
+}
+
+.coronavirus {
+  h3 {
+    margin-top: 10px;
+    color: red;
+  }
+
+  background: #efefef;
+  padding: 1px 15px 5px 15px;
+  margin: 30px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.navbar {
+  font-size: 150%;
+  padding: 15px 0;
+  background-color: #fff;
+
+  a, a:hover {
+    color: #262626;
+    text-decoration: none;
+  }
+
+  ul {
+    margin: 0;
+
+    li {
+      font-weight: bold;
+      padding: 0;
+    }
+  }
+}
+
+.getting-here {
+  img {
+    margin: 30px 0;
+  }
+
+  .address {
+    font-weight: bold;
+    background: #eee;
+    border: 3px solid red;
+    margin: 20px 0;
+    padding: 10px;
+  }
+}
+
+#nye {
+  h1 {
+    text-align: center;
+    margin: 40px 0 40px 0;
+  }
+}
+
+#faq {
+  ul.faq {
+    font-size: 150%;
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
+  dl {
+    margin-top: 40px;
+
+    dt {
+      font-size: 170%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    dd {
+      margin-bottom: 30px;
+
+      p.image-caption {
+        text-align: center;
+        margin: -20px 0 0 0;
+        font-size: 90%;
+        color: #ccc;
+      }
+
+      img {
+        margin: 25px 0;
+
+        &.printer-pro {
+          float: left;
+          width: 100px;
+          margin: 2px 15px 0 0;
+        }
+      }
+
+      .nest-schedules {
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+
+      blockquote {
+        margin: 20px 0;
+        padding: 0 0 0 15px;
+        color: #666;
+      }
+    }
+  }
+}
+
+#movie {
+  h1 {
+    margin: 0 0 20px 0;
+    font-size: 275%;
+    text-align: center;
+    background: red;
+    padding: 10px;
+    color: #fff;
+  }
+
+  img.movie-poster {
+    float: right;
+    margin-left: 20px;
+    width: 35%;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  h3 {
+    margin: 25px 0 15px 0;
+  }
+
+  h3.date {
+    margin: 5px 0 30px 0;
+  }
+
+  a {
+    color: red;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: red;
+    text-decoration: none;
+  }
+
+  .addeventatc {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    z-index: 0;
+  }
+
+  iframe {
+    width: 100%;
+  }
+
+  .canceled {
+    h1 {
+      background: red;
+      margin: 0;
+    }
+
+    p {
+      border: 3px solid red;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+#mc_embed_signup {
+  form {
+    padding: 0;
+  }
+
+  .mc-field-group {
+    width: 100%;
+    padding: 0;
+  }
+
+  input {
+    text-align: center;
+  }
+
+  .button {
+    width: 100%;
+    font-size: 120%;
+    padding: 5px 0;
+    height: auto;
+    background-color: #9999FF;
+
+    &:hover {
+      background-color: #8989e5;
+    }
+  }
+
+  div#mce-responses {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    #mce-success-response, #mce-error-response {
+      color: #666;
+    }
+
+    div.response {
+      font-weight: normal;
+      padding: 0;
+      margin: 15px 0 20px 0;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  #mc-embedded-subscribe-form div.mce_inline_error {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  #movie {
+    img, img.movie-poster, .addeventatc, p.time {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 375px) {
+  #header {
+    font-size: 200%;
+  }
+}

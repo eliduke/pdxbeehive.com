@@ -19,6 +19,8 @@
       New Year's Eve House Party at The Beehive
     {% elsif page.title == 'directions' %}
       Directions to The Beehive
+    {% elsif page.title contains 'Going Away' %}
+      {{ page.title }}
     {% else %}
       The Beehive: a cute little place in Cully
     {% endif %}
@@ -47,6 +49,8 @@
       Frequently Asked Questions at The Beehive
     {% elsif page.title == 'NYE' %}
       New Year's Eve House Party at The Beehive
+    {% elsif page.title contains 'Going Away' %}
+      {{ page.title }}
     {% else %}
       The Beehive: a cute little place in Cully
     {% endif %}

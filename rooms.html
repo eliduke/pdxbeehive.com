@@ -3,7 +3,7 @@ layout: default
 title: Rooms For Rent
 ---
 
-<img class="header img-rounded img-responsive" src="/images/homepage/beehive.jpg" />
+<img class="header img-rounded img-fluid" src="/images/homepage/beehive.jpg" />
 <h3 class="text-center">A cute little place in Cully</h3>
 <hr/>
 
@@ -11,7 +11,7 @@ title: Rooms For Rent
   {% for room in site.rooms %}
     <div class="col-sm-4">
       <a href="{{ room.url }}">
-        <img src="{{ room.image }}" class="img-responsive img-rounded">
+        <img src="{{ room.image }}" class="img-fluid img-rounded">
         <p class="text-center">{{ room.room }}</p>
       </a>
     </div>

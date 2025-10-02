@@ -4,18 +4,20 @@
   {% include head.html %}
 
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar fixed-top border-bottom">
       <div class="container">
-        <div class='row'>
-          <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 header">
-            {% include header.html %}
-          </div>
+        <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+          <ul class="list-unstyled list-inline d-flex justify-content-between">
+            <li class="list-inline-item"><a href="/">The Beehive</a></li>
+            <li class="list-inline-item"><a href='/'>🐝🏡☀️</a></li>
+          </ul>
         </div>
       </div>
     </nav>
+
     <div class="container">
       <div class="row">
-        <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 content">
+        <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
           {{ content }}
         </div>
       </div>

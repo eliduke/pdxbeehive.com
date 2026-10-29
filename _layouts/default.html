@@ -3,8 +3,8 @@
 
   {% include head.html %}
 
-  <body>
-    <nav class="navbar fixed-top border-bottom">
+  <body style="background: {{ page.background }}; background-image: url('{{ page.background-image }}');">
+    <nav class="navbar bg-dark fixed-top border-bottom border-body" data-bs-theme="dark">
       <div class="container">
         <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
           <ul class="list-unstyled list-inline d-flex justify-content-between">

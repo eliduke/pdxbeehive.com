@@ -4,13 +4,13 @@
   {% include head.html %}
 
   <body style="background: {{ page.background }}; background-image: url('{{ page.background-image }}');">
-    <nav class="navbar bg-dark fixed-top border-bottom border-body" data-bs-theme="dark">
+    <nav class="bg-dark fixed-top">
       <div class="container">
         <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-          <ul class="list-unstyled list-inline d-flex justify-content-between">
-            <li class="list-inline-item"><a href="/">The Beehive</a></li>
-            <li class="list-inline-item"><a href='/'>🐝🏡☀️</a></li>
-          </ul>
+          <div class="d-flex align-items-center justify-content-between fs-3 fw-bold" style="height: 70px">
+            <span><a class="text-white text-decoration-none" href="/">The Beehive</a></span>
+            <span><a class="text-decoration-none" href='/'>🐝🏡☀️</a></span>
+          </>
         </div>
       </div>
     </nav>
